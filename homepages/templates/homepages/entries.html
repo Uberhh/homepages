@@ -1,0 +1,17 @@
+{% extends "homepages/base.html" %}
+
+{% block content %}
+<center>
+  <h1>Homepages.</h1>
+</center>
+  <ul>
+    {% for entry in entries %}
+      <ol type="1" start="1">
+      <li><h3>{{ entry }}</h3></li>
+      </ol>
+    {% empty %}
+      <li><h3>Nothing here.</h3></li>
+    {% endfor %}
+  </ul>
+
+{% endblock content %}

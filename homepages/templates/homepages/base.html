@@ -1,0 +1,20 @@
+<head>
+        <meta charset="utf-8">
+        <title>Homepages</title>    
+<style type="text/css">
+body{
+background-image:url('http://m.qpic.cn/psc?/V52witNR02ylEv3xr90b1SdAjn264zjM/ruAMsa53pVQWN7FLK88i5iNTkbCzC8IVHe1ksxvDUM*emrso4q5vqx3jzRMPScyzZD0zOLtLAH3Od*OPlVzbrRt4DIB7.dDXiuLbWA595yQ!/b&bo=QAbeA0AG3gMBByA!&rf=viewer_4');
+background-repeat:repeat;
+}
+</style>
+</head> 
+  <title>Homepage</title>
+
+
+    <a href="{% url 'homepages:index' %}">
+        Homepage.</a>
+
+    <a href="{% url 'homepages:entries' %}">
+              Entries.</a></li>
+ 
+      {% block content %}{% endblock content %}
